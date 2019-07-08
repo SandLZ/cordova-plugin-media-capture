@@ -315,10 +315,10 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [[[UIAlertView alloc] initWithTitle:[[NSBundle mainBundle]
                                              objectForInfoDictionaryKey:@"CFBundleDisplayName"]
-                                    message:NSLocalizedString(@"Access to the camera has been prohibited; please enable it in the Settings app to continue.", nil)
+                                    message:NSLocalizedString(@"无法访问相机，请前往设置页面开启访问权限.", nil)
                                    delegate:weakSelf
-                          cancelButtonTitle:NSLocalizedString(@"OK", nil)
-                          otherButtonTitles:NSLocalizedString(@"Settings", nil), nil] show];
+                          cancelButtonTitle:NSLocalizedString(@"取消", nil)
+                          otherButtonTitles:NSLocalizedString(@"去设置", nil), nil] show];
     });
 }
 
